@@ -1,52 +1,59 @@
 
 # UserAuthFront
 
-UserAuthFront es un proyecto frontend desarrollado en React que permite la autenticación de usuarios. 
-Este proyecto interactúa con un backend llamado `microUserAuth` que maneja la lógica de autenticación 
-y almacenamiento de usuarios. La aplicación está diseñada con un enfoque en seguridad y usabilidad, 
-utilizando técnicas modernas para la gestión de estado y la comunicación con APIs.
+## Descripción
+**UserAuthFront** es un frontend en React diseñado para interactuar con el microservicio `microUserAuth` y gestionar la autenticación de usuarios. Este proyecto permite a los usuarios registrarse, iniciar sesión y manejar sesiones de usuario, asegurando una experiencia de usuario intuitiva y segura.
 
 ## Características
-
-- **Login y Registro de Usuarios**: Formulario de autenticación (login) y formulario de registro de nuevos usuarios.
-- **Manejo de Tokens**: Utiliza tokens JWT para la autenticación del usuario, que se almacenan de manera segura en `localStorage`.
-- **Manejo de Errores y Retroalimentación**: Muestra mensajes de error específicos en caso de credenciales incorrectas o errores de servidor.
-- **Estilo y Usabilidad**: Interfaz construida con Material-UI para lograr un diseño limpio y responsivo.
+- **Formulario de Login y Registro**: Permite a los usuarios registrarse y acceder a su cuenta.
+- **Manejo de Tokens**: Utiliza tokens JWT para la autenticación, almacenándolos de manera segura en `localStorage`.
+- **Manejo de Errores**: Muestra mensajes de error específicos en caso de credenciales incorrectas o problemas en el servidor.
+- **Estilo y Usabilidad**: Utiliza Material-UI para un diseño limpio y responsivo.
 
 ## Tecnologías Utilizadas
-
-- **React**: Para la construcción de la interfaz de usuario.
-- **Axios**: Para las solicitudes HTTP al backend (`microUserAuth`).
+- **React**: Framework para la interfaz de usuario.
+- **Axios**: Cliente HTTP para comunicación con la API.
 - **React Context API**: Para la gestión de estado de autenticación y tokens.
-- **Material-UI**: Para el diseño y componentes de la interfaz.
+- **Material-UI**: Para componentes visuales y diseño.
 
-## Instalación
+## Configuración y Uso
 
-1. Clonar el repositorio:
+### Requisitos
+- **Node.js** (versión 14.x o superior)
+- **npm** o **yarn**
+
+### Instalación
+1. **Clonar el repositorio**:
+
    ```bash
-   git clone https://github.com/Arixka/UserAuthFront.git
+   git clone https://github.com/tuusuario/UserAuthFront.git
    ```
 
-2. Instalar las dependencias:
+2. **Instalar las dependencias**:
+
    ```bash
    npm install
    ```
 
-3. Ejecutar la aplicación en modo desarrollo:
+3. **Ejecutar la aplicación en modo desarrollo**:
+
    ```bash
    npm start
    ```
 
-## Dependencias
+### Variables de Entorno
+Asegúrate de crear un archivo `.env` en la raíz del proyecto con las variables necesarias, como la URL del backend (`REACT_APP_API_URL=http://localhost:8080`).
 
-- **React Router DOM**: Para la navegación en la aplicación.
-- **Material-UI**: Librería de componentes de interfaz.
-- **Axios**: Cliente HTTP para la comunicación con la API.
-
-## Configuración del Backend
-
-Este frontend está diseñado para funcionar junto con el proyecto `microUserAuth`, que debe estar ejecutándose en `http://localhost:8080`.
+### Documentación de la API
+Esta aplicación interactúa con los siguientes endpoints del backend:
+- **POST /users**: Para registro de nuevos usuarios.
+- **POST /login**: Para autenticación de usuarios y generación de tokens JWT.
 
 ## Licencia
-
 Este proyecto está licenciado bajo la MIT License - ver el archivo [LICENSE](LICENSE) para más detalles.
+
+## Contacto
+
+Para consultas o más información, puedes contactarme en:
+[![Gmail](https://img.shields.io/badge/-Gmail-c14438?style=flat&logo=Gmail&logoColor=white)](mailto:marisiver25@gmail.com)
+[![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/maria-siverio/)
