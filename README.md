@@ -2,7 +2,8 @@
 # UserAuthFront
 
 ## Descripción
-**UserAuthFront** es un frontend en React diseñado para interactuar con el microservicio `microUserAuth` y gestionar la autenticación de usuarios. Este proyecto permite a los usuarios registrarse, iniciar sesión y manejar sesiones de usuario, asegurando una experiencia de usuario intuitiva y segura.
+
+Frontend en React diseñado para interactuar con el microservicio `microUserAuth` y gestionar la autenticación de usuarios. Este proyecto permite a los usuarios registrarse, iniciar sesión y manejar sesiones de usuario, asegurando una experiencia de usuario intuitiva y segura.
 
 ## Características
 - **Formulario de Login y Registro**: Permite a los usuarios registrarse y acceder a su cuenta.
